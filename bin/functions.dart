@@ -48,8 +48,11 @@ class LessonFunction extends Base{
       bool b = [true, false][Random().nextInt(2)];
       if (b){
         print("Переменная имеет значение $b");
+      } else {
+        print("Переменная имеет значение $b");
       }
     }
+    
     bool checkLessZero(int n){
       this.printRunningTask(StackTrace.current.toString());
       return n <= 0;
