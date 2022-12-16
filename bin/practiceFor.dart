@@ -13,9 +13,7 @@ class PracticeFor extends Base{
     
     void task1(){
       this.printRunningTask(StackTrace.current.toString());
-      for(int i=1; i<=5; i++){
-        print(i);
-      }
+        print([for(int i=1; i<=5; i++) i]);
     }
     void task2(){
       this.printRunningTask(StackTrace.current.toString());
