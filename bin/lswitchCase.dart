@@ -4,14 +4,14 @@ import 'dart:math';
 import 'dart_application_1.dart';
 
 void main(List<String> arguments) {
-  // LessonSwitch().task1();
-  // LessonSwitch().task2();
-  // LessonSwitch().task3();
-  // LessonSwitch().task4();
-  // LessonSwitch().task5();
-  // LessonSwitch().task6();
+  LessonSwitch().task1();
+  LessonSwitch().task2();
+  LessonSwitch().task3();
+  LessonSwitch().task4();
+  LessonSwitch().task5();
+  LessonSwitch().task6();
 
-  // BoldLesson().task1();
+  BoldLesson().task1();
   BoldLesson().task2();
 }
 
