@@ -4,15 +4,16 @@ import 'dart:math';
 import 'dart_application_1.dart';
 
 void main(List<String> arguments) {
-  LessonSwitch().task1();
-  LessonSwitch().task2();
-  LessonSwitch().task3();
-  LessonSwitch().task4();
-  LessonSwitch().task5();
-  LessonSwitch().task6();
+  // LessonSwitch().task1();
+  // LessonSwitch().task2();
+  // LessonSwitch().task3();
+  // LessonSwitch().task4();
+  // LessonSwitch().task5();
+  // LessonSwitch().task6();
 
-  BoldLesson().task1();
-  BoldLesson().task2();
+  // BoldLesson().task1();
+  // BoldLesson().task2();
+  BoldLesson().task3();
 }
 
 class LessonSwitch extends Base {
@@ -185,11 +186,13 @@ class BoldLesson extends Base {
   void task3() {
     print(
         "Необходимо суммировать все нечётные целые числа в диапазоне, который введёт пользователь с клавиатуры.");
+    stdout.write("Введите диапазон От: ");
+    int a = int.parse(stdin.readLineSync()!);
     stdout.write("Введите диапазон ДО: ");
     int n = int.parse(stdin.readLineSync()!);
     int sum = 0;
-    for (int i = 1; 0 <= n; i++) {
-      if (i.isEven) {
+    for (int i = a; i <= n; i++) {
+      if (i.isOdd) {
         sum += i;
       }
     }
