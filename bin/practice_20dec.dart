@@ -2,10 +2,10 @@ import 'dart:io';
 import 'dart:math';
 
 void main(List<String> arguments) {
-  // tast1();
-  // tast2();
+  tast1();
+  tast2();
   tast3();
-  // tast4();
+  tast4();
 }
 
 class Base {}
@@ -31,11 +31,11 @@ void tast2() {
 void tast3() {
   print(
       "================\nНайти сумму n элементов следующего ряда чисел:\n 1 -0.5 0.25 -0.125 … \nКоличество элементов (n) вводится с клавиатуры.");
-  double r = 2;
+  double r = -2;
   int n = int.parse(stdin.readLineSync()!);
   double s = 0;
   for (int i = 0; i < n; i++) {
-    r /= 2;
+    r = (r / 2) * -1;
     print(r);
     s += r;
   }
